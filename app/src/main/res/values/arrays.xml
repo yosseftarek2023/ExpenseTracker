@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="transaction_types">
+        <item>Income</item>
+        <item>Expense</item>
+    </string-array>
+
+<string-array name="income_categories">
+<item>Salary</item>
+<item>Bonus</item>
+<item>Investment</item>
+<!-- Add more categories -->
+</string-array>
+
+<string-array name="expense_categories">
+<item>Food</item>
+<item>Transport</item>
+<item>Shopping</item>
+<item>Bills</item>
+<!-- Add more categories -->
+</string-array>
+</resources>

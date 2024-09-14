@@ -1,0 +1,110 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <!-- Main Title -->
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:text="Expense Tracker"
+        android:textColor="@color/colorEnd"
+        android:textSize="36sp"
+        android:textStyle="bold" />
+
+    <!-- Total Balance -->
+    <TextView
+        android:id="@+id/tv_total_balance"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        android:layout_marginBottom="16dp"
+        android:gravity="center"
+        android:padding="16dp"
+        android:text="0"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:background="@drawable/rounded_border_square" />
+
+    <!-- Total Expense -->
+    <TextView
+        android:id="@+id/tv_total_expense"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_total_balance"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:gravity="center"
+        android:padding="16dp"
+        android:text="0"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:background="@drawable/rounded_border_square"
+        android:backgroundTint="#B80C0C" />
+
+    <!-- Total Income -->
+    <TextView
+        android:id="@+id/tv_total_income"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_total_balance"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:padding="16dp"
+        android:text="0"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:background="@drawable/rounded_border_square"
+        android:backgroundTint="#1C8A20" />
+
+    <!-- RecyclerView for Transactions -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_transactions"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_below="@id/tv_total_expense"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="120dp"
+        android:layout_weight="1"
+        android:background="@color/white"
+        android:padding="8dp"
+        android:clipToPadding="false"
+        android:scrollbars="vertical" />
+
+    <!-- Button to Add Transaction -->
+    <Button
+        android:id="@+id/btn_add_transaction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="8dp"
+        android:backgroundTint="@color/colorPrimary"
+        android:text="Add Transaction"
+        android:textColor="@color/white"
+        android:textStyle="bold" />
+
+    <!-- Button to Show All Transactions -->
+    <Button
+        android:id="@+id/btn_show_all_transactions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/btn_add_transaction"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="@color/colorAccent"
+        android:text="Show All Transactions"
+        android:textColor="@color/white"
+        android:textStyle="bold" />
+
+</RelativeLayout>
